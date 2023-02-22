@@ -1,0 +1,60 @@
+header{
+    color:aliceblue;
+    text-align: center;
+    background-color: rgb(22,27,34);
+    height: 35px;
+    .auth-links{
+        ul{
+            float: right;
+            margin: 5% 5px;
+            display: flex;
+            list-style: none;
+            li{
+                margin-right: 10px;
+            }
+        }
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    h3{
+        margin-top: 5px;
+        float:left ;
+        display: inline;
+    }
+
+    a{
+        margin-top: 3px;
+        margin-right: 10px;
+        text-align: center;
+        border-right: 1px solid;
+        text-decoration: none;
+        color: aliceblue;
+        transition: 1s ease-in-out;
+    }
+    a:hover{
+        // color: rgb(238,107,144);
+        padding: 4px;
+        background-color: rgb(238,107,144);
+        border-radius: 10px;
+    }
+    
+    #cred{
+        margin-top: 7px;
+        text-align: center;
+        float: right;
+        // display: inline;
+    }
+    
+}
+#sign-in{
+    float: right;
+   text-align: center;
+    display: inline;
+}
+#profile{
+    float: right;
+    color: red;
+}

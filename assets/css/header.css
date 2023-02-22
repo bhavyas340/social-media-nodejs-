@@ -1,0 +1,61 @@
+header {
+  color: aliceblue;
+  text-align: center;
+  background-color: #161b22;
+  height: 35px;
+}
+
+header .auth-links ul {
+  float: right;
+  margin: 5% 5px;
+  display: flex;
+  list-style: none;
+}
+
+header .auth-links ul li {
+  margin-right: 10px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header h3 {
+  margin-top: 5px;
+  float: left;
+  display: inline;
+}
+
+header a {
+  margin-top: 3px;
+  margin-right: 10px;
+  text-align: center;
+  border-right: 1px solid;
+  text-decoration: none;
+  color: aliceblue;
+  transition: 1s ease-in-out;
+}
+
+header a:hover {
+  padding: 4px;
+  background-color: #ee6b90;
+  border-radius: 10px;
+}
+
+header #cred {
+  margin-top: 7px;
+  text-align: center;
+  float: right;
+}
+
+#sign-in {
+  float: right;
+  text-align: center;
+  display: inline;
+}
+
+#profile {
+  float: right;
+  color: red;
+}

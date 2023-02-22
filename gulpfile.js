@@ -3,9 +3,9 @@ const gulp =require('gulp');
 
 const sass = require('gulp-sass');       // for css file to be compress
 const cssnano = require('gulp-cssnano');
-const rev = require('gulp-rev');
+const rev = (async () => await import('gulp-rev'))();
 const uglify = require('gulp-uglify-es').default;; // use to minify the javaScript
-const imagemin = require('');          // use to minify images
+const imagemin = require('gulp-imagemin');          // use to minify images
 const del = require('del');
 
 gulp.task('css', function(done){

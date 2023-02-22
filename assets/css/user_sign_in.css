@@ -1,0 +1,51 @@
+.Sign-page {
+  text-align: center;
+}
+
+.google-signin {
+  text-decoration: none;
+  padding: 5px 20px 5px 20px;
+  margin-top: 50px;
+  color: black;
+  border: 1px solid #d6e2f3;
+}
+
+#g {
+  font-size: 18px;
+  color: #3e7ee8;
+}
+
+#g:hover {
+  padding: 2px;
+  color: #3e7ee8;
+}
+
+#o1, #e {
+  font-size: 18px;
+  color: #df3e32;
+}
+
+#o1, #e:hover {
+  padding: 2px;
+  color: #df3e32;
+}
+
+#o2 {
+  font-size: 18px;
+  color: #ebb140;
+}
+
+#o2:hover {
+  padding: 2px;
+  color: #ebb140;
+}
+
+#l {
+  font-size: 18px;
+  color: #48a04f;
+}
+
+#l:hover {
+  padding: 2px;
+  color: #48a04f;
+}

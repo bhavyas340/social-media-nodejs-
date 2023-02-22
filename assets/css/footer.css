@@ -1,0 +1,11 @@
+footer {
+  font-family: sans-serif;
+  color: aliceblue;
+  background-color: #4944ab;
+}
+
+footer a {
+  display: block;
+  color: aliceblue;
+  text-decoration: none;
+}

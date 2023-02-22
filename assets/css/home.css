@@ -1,0 +1,76 @@
+#home-container {
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+}
+
+#home-container #feed-posts {
+  width: 70%;
+  padding: 10px;
+}
+
+#home-container #user-friends {
+  width: 30%;
+  padding: 10px;
+  border-left: 1px solid lightgray;
+  height: 100%;
+}
+
+#home-container li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#home-container #comments {
+  padding: 8px;
+  width: max-content;
+  border-radius: 8px;
+  background-color: #d0efd1;
+}
+
+#home-container .post-p {
+  padding: 8px;
+  width: max-content;
+  border-radius: 8px;
+  background-color: #d9d6ee;
+}
+
+#home-container small {
+  font-size: 10px;
+}
+
+#home-container .post-comment {
+  padding: 10px;
+  width: max-content;
+  border-radius: 8px;
+  background-color: #d9d6ee;
+}
+
+#home-container .comment-button {
+  border-radius: 8px;
+  border-color: aliceblue;
+  background-color: transparent;
+}
+
+#home-container .comment-button:hover {
+  background-color: #d0efd1;
+  color: white;
+}
+
+#home-container .delete-post-button {
+  color: red;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#home-container #Post-head {
+  width: max-content;
+  font-family: 'Rubik', sans-serif;
+  padding: 5px;
+  color: #f5f5f7;
+  background-color: black;
+}
+
+#home-container .Sign-page {
+  text-align: center;
+  align-items: center;
+}

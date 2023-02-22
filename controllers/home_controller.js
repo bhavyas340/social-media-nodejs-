@@ -1,9 +1,80 @@
-module.exports.home =function(req,res){
-    return res.end('<h1>Express is up for Codeial!!</h1>');
-};
+const Post = require('../models/post');
+const User = require('../models/user')
 
-module.exports.about = function(req,res){
-    return res.end(
-        '<p>Name : Bhavya </p>'+'<p>I am from Udaipur</p>' //this is how we can use html
-);
+module.exports.home = async function(req,res){
+    // Post.find({}, function(err, posts){
+    //     return res.render('home',{
+    //         title: 'Codeial | Home',
+    //         posts: posts
+    //     });
+try{
+    // populate the user of each post
+   let posts = await Post.find({})
+   .sort('-createdAt')
+   .populate('user')
+   .populate({
+       path: 'comments',
+       populate: {
+           path: 'user'
+       },
+       populate:{
+        path:'likes'
+        
+       }
+   }).populate('comments')
+   .populate('likes');
+
+   let users = await User.find({});
+
+   return res.render('home', {
+       title: "Codeial | Home",
+       posts:  posts,
+       all_users: users
+   });
+
+}catch(err){
+   console.log('Error', err);
+   return;
 }
+// try{
+//     // CHANGE :: populate the likes of each post and comment
+//     let posts = await Post.find({})
+//     .sort('-createdAt')
+//     .populate('user')
+//     .populate({
+//         path: 'comments',
+//         populate: {
+//             path: 'user'
+//         },
+//         populate: {
+//             path: 'likes'
+//         }
+//     }).populate('comments')
+//     .populate('likes');
+
+
+//     let users = await User.find({});
+
+//     return res.render('home', {
+//         title: "Codeial | Home",
+//         posts:  posts,
+//         all_users: users
+//     });
+
+// }catch(err){
+//     console.log('Error', err);
+//     return;
+// }
+
+}
+   
+
+   
+// module.xports.actionName = function(req,res){}
+
+// using then
+// Post.find({}).populate('comments').then(function(){});
+
+// let posts = Post.find({}).populate('comments').exec();
+
+// Post.then() //prommie
